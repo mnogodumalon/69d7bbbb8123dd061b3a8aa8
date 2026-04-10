@@ -18,7 +18,7 @@ import {
   IconAlertCircle, IconTool, IconRefresh, IconCheck,
   IconPlus, IconPencil, IconTrash, IconClock, IconCalendar,
   IconChefHat, IconUsers, IconShoppingCart, IconNotes,
-  IconExternalLink, IconArrowRight, IconCircleCheck,
+  IconExternalLink, IconArrowRight, IconCircleCheck, IconChevronRight,
 } from '@tabler/icons-react';
 
 const APPGROUP_ID = '69d7bbbb8123dd061b3a8aa8';
@@ -107,6 +107,20 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
+      {/* Intent Workflows */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="#/intents/sammelbestellung" className="bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 min-w-0 overflow-hidden">
+          <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+            <IconUsers size={20} className="text-primary" />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="font-semibold text-sm truncate">Sammelbestellung aufgeben</p>
+            <p className="text-xs text-muted-foreground truncate">Mehrere Bestellungen für das Team in einem Flow</p>
+          </div>
+          <IconChevronRight size={16} className="text-muted-foreground shrink-0" />
+        </a>
+      </div>
+
       {/* KPI Stats */}
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         <StatCard
