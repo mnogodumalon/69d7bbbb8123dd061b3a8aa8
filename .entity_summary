@@ -1,0 +1,5 @@
+- Bestellrunde (bestellrunde): runde_name[string/text], restaurant_name[string/text], restaurant_url[string/url], bestelldatum[date/datetimeminute], deadline[date/datetimeminute], notiz[string/textarea]
+- Bestellung (bestellung): bestellrunde_auswahl[applookup/select], teilnehmer_vorname[string/text], teilnehmer_nachname[string/text], gerichte_auswahl[applookup/select], sonderwunsch[string/textarea]
+  → bestellrunde_auswahl links to app_id 69d7bba402cbf271627c8809
+  → gerichte_auswahl links to app_id 69d7bb9fa70dfa4924d3481e
+- Gerichte (gerichte): gericht_name[string/text], gericht_beschreibung[string/textarea], gericht_preis[number], gericht_kategorie[lookup/select]
